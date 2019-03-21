@@ -27,7 +27,7 @@ public class Test {
             //4、匿名内部类实现学号排序
             @Override
             public int compare(Integer i1, Integer i2) {
-                return i2-i1;//分数相同的话，学号由高到低
+            return i2-i1;//分数相同的话，学号由高到低
             }
         });
         TreeMap<Integer, Integer> map = new TreeMap<>();

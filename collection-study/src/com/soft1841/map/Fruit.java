@@ -1,4 +1,4 @@
-package com.soft1841;
+package com.soft1841.map;
 
 public class Fruit {
     private Double price;

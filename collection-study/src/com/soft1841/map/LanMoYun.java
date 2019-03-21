@@ -1,4 +1,4 @@
-package com.soft1841;
+package com.soft1841.map;
 
 import java.util.ArrayList;
 import java.util.HashMap;
