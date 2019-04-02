@@ -21,8 +21,7 @@ public class Test {
     }
 
     private static void getAllFile(File mFile, List<File> f) {
-        // 获取子目录
-        File[] files = mFile.listFiles();
+         File[] files = mFile.listFiles();
         for (File file : files) {
             if (file.isDirectory()) {
                 getAllFile(file, f);
