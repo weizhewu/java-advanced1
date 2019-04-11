@@ -1,18 +1,27 @@
 package com.soft1841.thread.group1;
 
 import javax.swing.*;
+import java.applet.Applet;
+import java.applet.AudioClip;
+import java.io.File;
+import java.net.MalformedURLException;
+import java.net.URL;
 
-public class MusicPlayerThread extends Thread {
-    private String[] music ={"https://y.qq.com/n/yqq/song/001J5QJL1pRQYB.html",
-            "https://y.qq.com/portal/search.html#page=1&searchid=1&remoteplace=txt.yqq.top&t=song&w=%E4%BD%A0%E7%9A%84%E9%85%92%E9%A6%86%E5%AF%B9%E6%88%91%E6%89%93%E4%BA%86%E7%83%8A"};
-    private JComboBox musicCoboBox;
-
-    public void setMusicCoboBox(JComboBox musicCoboBox) {
-        this.musicCoboBox = musicCoboBox;
-    }
-
+/**
+ * 播放本地音乐
+ */
+public class RandomPointThread extends Thread {
     @Override
     public void run() {
+        File file = new File("D:/yy/1.wav");
+        URL url ;
+        try {
+            url = file.toURI().toURL();
+            AudioClip audioClip = Applet.newAudioClip(url);
+            audioClip.play();
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
 
     }
 }

@@ -1,4 +1,4 @@
-package com.soft1841.thread;
+package com.soft1841.thread.randomRgb;
 
 import javax.swing.*;
 import java.awt.*;
@@ -12,10 +12,7 @@ public class NumFrame extends JFrame {
     public NumFrame(){
         init();
         setTitle("试验窗体");
-        setSize(640,480);
-        setLocationRelativeTo(null);
-        //窗口大小不可变
-        setResizable(true);
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
         setVisible(true);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }

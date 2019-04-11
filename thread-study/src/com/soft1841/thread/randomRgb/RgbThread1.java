@@ -1,4 +1,4 @@
-package com.soft1841.thread;
+package com.soft1841.thread.randomRgb;
 
 import javax.swing.*;
 import java.awt.*;

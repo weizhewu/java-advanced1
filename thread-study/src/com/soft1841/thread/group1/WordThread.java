@@ -1,21 +1,22 @@
-package com.soft1841.thread.randomRgb;
+package com.soft1841.thread.group1;
 
 import javax.swing.*;
-import javax.xml.soap.Text;
-import java.awt.*;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
 
+/**
+ * 文字的轮播
+ */
 public class WordThread extends Thread {
     private JLabel wordLabel;
-    private String[]word = {"时间是一切财富中最宝贵的财富。 —— 德奥弗拉斯多",
-            "把时间用在思考上是最能节省时间的事情。 —— 卡曾斯",
-            "真理惟一可靠的标准就是永远自相符合。 —— 欧文",
+    private String[]word = {"时间是一切财富中最宝贵的财富。 ",
+            "把时间用在思考上是最能节省时间的事情。",
+            "真理惟一可靠的标准就是永远自相符合。 ",
             "生活有度，人生添寿。 —— 书摘",
-            "没有人不爱惜他的生命，但很少人珍视他的时间。 —— 梁实秋",
-            "从不浪费时间的人，没有工夫抱怨时间不够。 —— 杰弗逊"};
+            "从不浪费时间的人没有工夫抱怨时间不够。 ",
+            "行万里路，读万卷书",
+            "学习永远不晚",
+            "事常与人0   违，事总在人为",
+            "行路人，用足音代替叹息吧",
+            "鞋底磨穿了，不等于路走到了头"};
     public void setWordLabel(JLabel wordLabel) {
         this.wordLabel = wordLabel;
     }
@@ -26,7 +27,7 @@ public class WordThread extends Thread {
         while (true){
             wordLabel.setText(word[i]);
             try {
-                Thread.sleep(1000);
+                Thread.sleep(1500);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -35,6 +36,5 @@ public class WordThread extends Thread {
                 i = 0;
             }
         }
-
     }
 }
