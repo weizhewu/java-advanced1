@@ -28,11 +28,9 @@ public class JFileChooserTest extends JFrame implements ActionListener {
         pathLabel.setFont(font);
         add(pathLabel);
     }
-
     public static void main(String[] args) {
         new JFileChooserTest();
     }
-
     @Override
     public void actionPerformed(ActionEvent e) {
         //创建JFileChooser
@@ -57,8 +55,6 @@ public class JFileChooserTest extends JFrame implements ActionListener {
             } catch (FileNotFoundException e1) {
                 e1.printStackTrace();
             }
-
-
         }
     }
 }

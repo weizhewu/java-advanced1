@@ -13,14 +13,18 @@ import java.net.URL;
 public class RandomPointThread extends Thread {
     @Override
     public void run() {
-        File file = new File("D:/yy/1.wav");
-        URL url ;
-        try {
-            url = file.toURI().toURL();
-            AudioClip audioClip = Applet.newAudioClip(url);
-            audioClip.play();
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
+        int i = 1;
+        while (i>=1){
+            File file = new File("D:/yy/1.wav");
+            URL url ;
+            try {
+                url = file.toURI().toURL();
+                AudioClip audioClip = Applet.newAudioClip(url);
+                audioClip.play();
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            }
+            i--;
         }
 
     }

@@ -14,14 +14,14 @@ public class InputToFile{
         Writer out1 =  new FileWriter(destFile1,true);
         out1.write(chars);
         out1.close();
-        //方法2：通过字节流输出
-        byte[] bytes = inputString.getBytes();
-        File destFile2 = new File("E:/result2.txt");
-        OutputStream out2 = new FileOutputStream(destFile2);
-        out2.write(bytes);
-        out2.close();
-        //方法3：通过打印流输出
-        File destFile3 = new File("E:/result3.txt");
-        OutputStream  out3 = new FileOutputStream(destFile3);
+//        //方法2：通过字节流输出
+//        byte[] bytes = inputString.getBytes();
+//        File destFile2 = new File("E:/result2.txt");
+//        OutputStream out2 = new FileOutputStream(destFile2);
+//        out2.write(bytes);
+//        out2.close();
+//        //方法3：通过打印流输出
+//        File destFile3 = new File("E:/result3.txt");
+//        OutputStream  out3 = new FileOutputStream(destFile3);
     }
 }

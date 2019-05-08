@@ -33,7 +33,7 @@ public class GetImageByNet extends  Object implements Runnable {
             //通过输出流获取到字节数组
             byte[] data = out1.toByteArray();
             //new一个文件对象用来保存图片，默认保存当前工程跟目录
-            File imageFile = new File("1.jpg");
+            File imageFile = new File("1.png");
             //创建输出流
             OutputStream out2 = new FileOutputStream(imageFile);
             //写入数据

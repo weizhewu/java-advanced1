@@ -7,6 +7,7 @@ import java.util.Date;
 
 public class FolderTest {
     public static void main(String[] args) {
+        
         SimpleDateFormat format = new SimpleDateFormat("yyyyMMdd");
         Date currentTime = new Date();
         String a = format.format(currentTime);

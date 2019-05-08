@@ -6,7 +6,7 @@ import java.io.*;
  */
 
 public class CarouseThread implements Runnable {
-    private String[] imgs = {"D:/carouse/1.jpg", "D:/carouse/2.jpg", "D:/carouse/3.jpg", "D:/carouse/4.jpg", "D:/carouse/5.jpg"};
+    private String[] imgs = {"D:/carouse/1.png", "D:/carouse/2.jpg", "D:/carouse/3.jpg", "D:/carouse/4.jpg", "D:/carouse/5.jpg"};
     private JLabel bgLabel;
 
     public void setBgLabel(JLabel bgLabel) {
