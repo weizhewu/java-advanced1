@@ -32,13 +32,13 @@ class ServerThread6 implements Runnable{
     public void run() {
         System.out.println("客户端"+socket.getInetAddress()+"连接成功");
         String info ="这是一条服务器通知";
-        OutputStream outputStream = null;
+        OutputStream out = null;
         try {
-            outputStream = socket.getOutputStream();
+            out = socket.getOutputStream();
         } catch (IOException e) {
             e.printStackTrace();
         }
-        PrintStream printStream = new PrintStream(outputStream);
+        PrintStream printStream = new PrintStream(out);
         printStream.println(info);
         printStream.close();
 
