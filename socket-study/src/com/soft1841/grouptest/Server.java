@@ -15,116 +15,89 @@ public class Server extends JFrame implements ActionListener {
     private JButton confirmBtn;
     private JPanel topPanel;
     private String info;
+    private Socket socket;
+
 
     public static void main(String[] args) throws IOException {
         new Server();
     }
-    public Server() throws IOException {
+
+    public Server() {
         init();
         setLocationRelativeTo(null);
-        setSize(600,400);
+        setSize(600, 400);
         setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
-    public void init(){
+
+    public void init() {
         topPanel = new JPanel();
         confirmBtn = new JButton("发送");
-        confirmBtn.setPreferredSize(new Dimension(120,40));
+        confirmBtn.setPreferredSize(new Dimension(120, 40));
         confirmBtn.addActionListener(this);
         textField = new JTextField();
-        textField.setPreferredSize(new Dimension(300,40));
+        textField.setPreferredSize(new Dimension(300, 40));
         topPanel.add(textField);
         topPanel.add(confirmBtn);
-        add(topPanel,BorderLayout.NORTH);
+        add(topPanel, BorderLayout.NORTH);
         textArea = new JTextArea();
-        add(textArea,BorderLayout.CENTER);
+        //文本域设置成不可编辑
+        textArea.setEditable(false);
+        //文本域设置成不可获得焦点
+        textArea.setFocusable(false);
+        JScrollPane jScrollPane = new JScrollPane(textArea);
+        add(jScrollPane,BorderLayout.CENTER);
         startBtn = new JButton("启动服务器");
-        add(startBtn,BorderLayout.SOUTH);
+        add(startBtn, BorderLayout.SOUTH);
         startBtn.addActionListener(this);
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        ServerSocket ss = null;
+        if (e.getSource() == startBtn) {
+            startServer();
+            startBtn.setVisible(false);
+        }
+        if (e.getSource() == confirmBtn) {
+            OutputStream out = null;
+            try {
+                out = socket.getOutputStream();
+                info="李家劲："+textField.getText();
+                out.write(info.getBytes());
+            } catch (IOException e1) {
+                e1.printStackTrace();
+            }
+        }
+
+    }
+    private void startServer(){
         try {
-            ss = new ServerSocket(10086);
+            ServerSocket ss = new ServerSocket(10086);
+            socket = ss.accept();
+            System.out.println("服务器"+socket.getLocalSocketAddress()+"已启动");
+
+            read();
         } catch (IOException e1) {
             e1.printStackTrace();
         }
-
-        if (e.getSource()==startBtn){
-            System.out.println("服务器已登录");
-            while (true){
+    }
+    private void read(){
+        System.out.println("客户端——"+socket.getInetAddress() + "——已登录");
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                InputStream in = null;
                 try {
-                    Socket socket = ss.accept();
-                    ReceiveThread rt = new ReceiveThread(socket);
-                    new Thread(rt).start();
-                } catch (IOException e1) {
-                    e1.printStackTrace();
+                   while (true){
+                       in = socket.getInputStream();
+                       byte[] b = new byte[1024];
+                       in.read(b);
+                       textArea.append(new String(b)+"\n");
+                   }
+                } catch (IOException e) {
+                    e.printStackTrace();
                 }
             }
-        }
-        if (e.getSource()==confirmBtn){
-            info = textField.getText().trim();
-
-            while (true){
-                try {
-                    Socket socket = ss.accept();
-                    GiveThread gt =  new GiveThread(socket);
-                    new Thread(gt).start();
-
-                } catch (IOException e1) {
-                    e1.printStackTrace();
-                }
-            }
-        }
-    }
-}
-class ReceiveThread implements Runnable{
-    private Socket socket;
-
-    public ReceiveThread(Socket socket) {
-        this.socket = socket;
-    }
-
-    @Override
-    public void run() {
-        System.out.println("客户端"+socket.getInetAddress()+"连接成功");
-        try {
-            InputStream in = socket.getInputStream();
-            byte[] b = new byte[1024];
-            in.read(b);
-            System.out.println(new String(b));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-    }
-}
-class GiveThread implements Runnable{
-    private Socket socket;
-    private String info;
-
-    public GiveThread(String info) {
-        this.info = info;
-    }
-
-
-    public GiveThread(Socket socket) {
-        this.socket = socket;
-    }
-
-    @Override
-    public void run() {
-        OutputStream out = null;
-        try {
-            out = socket.getOutputStream();
-            PrintStream printStream = new PrintStream(out);
-            printStream.println(info);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-
+        }).start();
     }
 }
