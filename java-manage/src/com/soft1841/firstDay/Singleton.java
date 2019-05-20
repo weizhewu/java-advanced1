@@ -1,4 +1,4 @@
-package punchTheClock;
+package com.soft1841.firstDay;
 
 public class Singleton {
     //创建SingLeton的一个对象

@@ -1,4 +1,5 @@
-import punchTheClock.Singleton;
+package com.soft1841.firstDay;
+
 
 public class SingletonTest {
     public static void main(String[] args) {
