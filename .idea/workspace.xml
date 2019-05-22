@@ -7,10 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68a8e471-2f8e-4070-930e-02a0013911b8" name="Default Changelist" comment="secondDay">
-      <change afterPath="$PROJECT_DIR$/java-manage/src/com/soft1841/thirdDay/AdapterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-manage/src/com/soft1841/thirdDay/Sports.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-manage/src/com/soft1841/thirdDay/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-manage/src/com/soft1841/thirdDay/Study.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-manage/src/com/soft1841/fourthDay/Proxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-manage/src/com/soft1841/fourthDay/ProxyPattern.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-manage/src/com/soft1841/fourthDay/RealSubject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-manage/src/com/soft1841/fourthDay/Subject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/jdbc-study/target/" />
@@ -37,45 +37,45 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java-manage/src/com/soft1841/thirdDay/Study.java">
+        <entry file="file://$PROJECT_DIR$/java-manage/src/com/soft1841/fourthDay/Subject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="6" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="6" />
+            <state relative-caret-position="84">
+              <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java-manage/src/com/soft1841/thirdDay/Sports.java">
+        <entry file="file://$PROJECT_DIR$/java-manage/src/com/soft1841/fourthDay/RealSubject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="6" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="6" />
+            <state relative-caret-position="140">
+              <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+              <folding>
+                <element signature="e#118#119#0" expanded="true" />
+                <element signature="e#154#155#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java-manage/src/com/soft1841/thirdDay/Student.java">
+        <entry file="file://$PROJECT_DIR$/java-manage/src/com/soft1841/fourthDay/Proxy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state>
+              <caret column="6" lean-forward="true" selection-start-column="6" selection-end-column="6" />
+              <folding>
+                <element signature="e#338#339#0" expanded="true" />
+                <element signature="e#374#375#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/java-manage/src/com/soft1841/thirdDay/AdapterTest.java">
+        <entry file="file://$PROJECT_DIR$/java-manage/src/com/soft1841/fourthDay/ProxyPattern.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-              <folding>
-                <element signature="e#172#306#0" expanded="true" />
-                <element signature="e#305#306#0" expanded="true" />
-                <element signature="e#459#460#0" expanded="true" />
-                <element signature="e#513#514#0" expanded="true" />
-                <element signature="e#583#584#0" expanded="true" />
-                <element signature="e#635#636#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="140">
+              <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -106,10 +106,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/io-study/src/punchTheClock/Client.java" />
-        <option value="$PROJECT_DIR$/io-study/src/punchTheClock/Internet/Server.java" />
-        <option value="$PROJECT_DIR$/io-study/src/punchTheClock/Internet/Client.java" />
-        <option value="$PROJECT_DIR$/socket-study/src/Internet/Server1.java" />
         <option value="$PROJECT_DIR$/socket-study/src/Internet/Client1.java" />
         <option value="$PROJECT_DIR$/socket-study/src/Internet/Server2.java" />
         <option value="$PROJECT_DIR$/socket-study/src/Internet/Client2.java" />
@@ -157,6 +153,10 @@
         <option value="$PROJECT_DIR$/java-manage/src/com/soft1841/thirdDay/Sports.java" />
         <option value="$PROJECT_DIR$/java-manage/src/com/soft1841/thirdDay/Student.java" />
         <option value="$PROJECT_DIR$/java-manage/src/com/soft1841/thirdDay/AdapterTest.java" />
+        <option value="$PROJECT_DIR$/java-manage/src/com/soft1841/fourthDay/Subject.java" />
+        <option value="$PROJECT_DIR$/java-manage/src/com/soft1841/fourthDay/RealSubject.java" />
+        <option value="$PROJECT_DIR$/java-manage/src/com/soft1841/fourthDay/Proxy.java" />
+        <option value="$PROJECT_DIR$/java-manage/src/com/soft1841/fourthDay/ProxyPattern.java" />
       </list>
     </option>
   </component>
@@ -190,6 +190,27 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="java-advanced" type="58d84e3e:PackageViewProjectNode" />
+              <item name="gui-form" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="java-advanced" type="58d84e3e:PackageViewProjectNode" />
+              <item name="io-study" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="java-advanced" type="58d84e3e:PackageViewProjectNode" />
+              <item name="io-study" type="616d4139:PackageViewModuleNode" />
+              <item name="com.soft1841.io" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -213,7 +234,7 @@
               <item name="java-manage" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="soft1841" type="462c0819:PsiDirectoryNode" />
-              <item name="thirdDay" type="462c0819:PsiDirectoryNode" />
+              <item name="fourthDay" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java-advanced" type="b2602c69:ProjectViewProjectNode" />
@@ -234,33 +255,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="java-advanced" type="58d84e3e:PackageViewProjectNode" />
-              <item name="gui-form" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="java-advanced" type="58d84e3e:PackageViewProjectNode" />
-              <item name="io-study" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="java-advanced" type="58d84e3e:PackageViewProjectNode" />
-              <item name="io-study" type="616d4139:PackageViewModuleNode" />
-              <item name="com.soft1841.io" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558480765532" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558565519205" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/thread-study/jar/jsoup-1.11.3.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -306,7 +306,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AdapterTest">
+  <component name="RunManager" selected="Application.ProxyPattern">
     <configuration name="AdapterTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.soft1841.thirdDay.AdapterTest" />
       <module name="java-manage" />
@@ -333,12 +333,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JDBCDemo4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.soft1841.jdbc.JDBCDemo4" />
-      <module name="jdbc-study" />
+    <configuration name="NetFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.soft1841.thread.group1.NetFrame" />
+      <module name="task-groupOrSingle" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.soft1841.jdbc.*" />
+          <option name="PATTERN" value="com.soft1841.thread.group1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -346,12 +346,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NetFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.soft1841.thread.group1.NetFrame" />
-      <module name="task-groupOrSingle" />
+    <configuration name="ProxyPattern" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.soft1841.fourthDay.ProxyPattern" />
+      <module name="java-manage" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.soft1841.thread.group1.*" />
+          <option name="PATTERN" value="com.soft1841.fourthDay.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -368,11 +368,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProxyPattern" />
         <item itemvalue="Application.AdapterTest" />
         <item itemvalue="Application.FactoryTest" />
         <item itemvalue="Application.SingletonTest" />
         <item itemvalue="Application.NetFrame" />
-        <item itemvalue="Application.JDBCDemo4" />
       </list>
     </recent_temporary>
   </component>
@@ -486,6 +486,8 @@
       <workItem from="1558391867457" duration="1254000" />
       <workItem from="1558412434928" duration="686000" />
       <workItem from="1558479956649" duration="821000" />
+      <workItem from="1558500948403" duration="596000" />
+      <workItem from="1558565078593" duration="387000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1552997519928</created>
@@ -512,7 +514,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="392661000" />
+    <option name="totallyTimeSpent" value="393644000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -525,8 +527,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24463807" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25134048" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -603,40 +606,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/task/src/others/MainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3916">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thread-study/src/CarouseFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/socket-study/src/com/soft1841/socket/Server2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/socket-study/src/com/soft1841/socket/Client2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/socket-study/src/com/soft1841/socket/Client.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
@@ -940,36 +909,68 @@
     <entry file="file://$PROJECT_DIR$/java-manage/src/com/soft1841/thirdDay/Study.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
-          <caret line="6" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="6" />
+          <caret line="6" selection-start-line="4" selection-start-column="21" selection-end-line="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java-manage/src/com/soft1841/thirdDay/Sports.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
-          <caret line="6" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="6" />
+          <caret line="6" selection-start-line="4" selection-start-column="24" selection-end-line="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java-manage/src/com/soft1841/thirdDay/Student.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java-manage/src/com/soft1841/thirdDay/AdapterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
+        <state relative-caret-position="280">
           <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
           <folding>
-            <element signature="e#172#306#0" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
             <element signature="e#459#460#0" expanded="true" />
-            <element signature="e#513#514#0" expanded="true" />
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
+            <element signature="e#518#519#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-manage/src/com/soft1841/fourthDay/Subject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-manage/src/com/soft1841/fourthDay/RealSubject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+          <folding>
+            <element signature="e#118#119#0" expanded="true" />
+            <element signature="e#154#155#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-manage/src/com/soft1841/fourthDay/Proxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" lean-forward="true" selection-start-column="6" selection-end-column="6" />
+          <folding>
+            <element signature="e#338#339#0" expanded="true" />
+            <element signature="e#374#375#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-manage/src/com/soft1841/fourthDay/ProxyPattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
         </state>
       </provider>
     </entry>
